@@ -101,7 +101,7 @@ Frequent commits act as safety nets. If a new fix introduces a cascading error e
 ## What did you learn about using JUnit tests to guide debugging?
 JUnit tests eliminate the guesswork by defining the exact expected behavior against boundaries and edge cases. They act as automated blueprints for how the code should perform under stress.
 
-
+ 
 
 ---
 
@@ -109,15 +109,9 @@ JUnit tests eliminate the guesswork by defining the exact expected behavior agai
 
 # Commit 5: Final Reflection
 
-
-
 ## What did you complete or update before making this final commit?
-
--
-
-
+I finished answering all the prompt questions in the Overall Reflection section of this README.
 
 ## Why is it useful to document your work after completing a programming task?
-
-- 
+Thorough documentation ensures that future developers (or yourself months down the line) understand the intent behind a fix, not just the syntax. It serves as a permanent, searchable log of decisions made and problems solved.
 
