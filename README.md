@@ -68,31 +68,17 @@ The test errors explicitly pointed out the out-of-bounds exception, while the su
 
 # Commit 4: Task 3 (sumRange)
 
-
-
 ## Which tests in Task3Test were failing before your fix?
-
--
-
-
+Tests evaluating a range where the `start` parameter was mathematically greater than the `end` parameter.
 
 ## What was the issue in the code?
-
--
-
-
+The `for` loop initialized `i` to `start` and only ran while `i <= end`. If `start` was larger than `end`, the loop bypassed execution entirely and returned a sum of 0, failing to calculate a value across the given range of numbers[cite: 17].
 
 ## What change did you make to fix it?
-
--
-
-
+I added a simple conditional swap at the beginning of the method. If `start > end`, the method uses a temporary variable to swap the bounds before executing the loop.
 
 ## How did the tests help guide your fix?
-
--
-
-
+The failing tests showed an expected calculated sum but an actual return value of 0, indicating the loop was being skipped entirely due to inverted bounds.
 
 ---
 

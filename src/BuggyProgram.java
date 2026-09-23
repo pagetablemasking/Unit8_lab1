@@ -31,34 +31,26 @@ public class BuggyProgram {
 
 
 
-    // Method 3: loop with bounds (no array)
-
+    // Method 3: loop with bounds (no array) (FIXED in Commit 4)
     public static int sumRange(int start, int end) {
-
         int sum = 0;
 
-
-
-        for (int i = start; i <= end; i++) {
-
-            sum += i;
-
+        // Handle cases where the start bound is greater than the end bound
+        if (start > end) {
+            int temp = start;
+            start = end;
+            end = temp;
         }
 
-
+        for (int i = start; i <= end; i++) {
+            sum += i;
+        }
 
         return sum;
-
     }
-
-
 
     public static void main(String[] args ){
-
         System.out.println("Test the program using the JUnit tests");
-
     }
-
-
 
 }
