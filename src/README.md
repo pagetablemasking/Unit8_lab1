@@ -4,34 +4,25 @@
 
 ## Student Name
 
-Enter your name here.
+Bernard Thomas Kelly
 
 
 
 ## GitHub Repository URL
 
-Paste your GitHub repository URL here.
+https://github.com/pagetablemasking/Unit8_lab1
 
 
 
 ---
 
-
-
 # Commit 1: Initial Commit
 
-
-
 ## What did you include in this commit?
-
--
-
-
+The starter files for the `unit8_lab1` project, including `BuggyProgram.java`, `README.md`, and the three JUnit test classes
 
 ## What was the purpose of this commit?
-
--
-
+To establish the baseline version of the project in version control before making any logical changes or fixes to the buggy methods.
 
 
 ---
@@ -40,30 +31,17 @@ Paste your GitHub repository URL here.
 
 # Commit 2: Task 1 (getGrade)
 
-
-
 ## Which tests in Task1Test were failing before your fix?
-
--
-
-
+Tests evaluating scores above 90 and between 81-90.
 
 ## What was the issue in the code?
-
--
-
-
+The original string returns were swapped. A score above 90 incorrectly returned "Meets", while a score above 80 returned "Exceeds".
 
 ## What change did you make to fix it?
-
--
-
-
+I updated the conditional branches to return the performance levels from highest to lowest. Scores > 90 now return "Exceeds", > 80 return "Meets", and everything else defaults to "Does Not Meet". I also flattened the nested `else { if () }` into a cleaner `else if` structure.
 
 ## How did the tests help guide your fix?
-
--
-
+The failed test assertions immediately highlighted the logical mismatch between the expected category and the actual string returned.
 
 
 ---
