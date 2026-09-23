@@ -86,35 +86,20 @@ The failing tests showed an expected calculated sum but an actual return value o
 
 # Overall Reflection
 
-
-
 ## Which task was the easiest to fix? Why?
-
--
-
-
+Task 1 (`getGrade`) was the most straightforward because it simply required reordering string return values to match the instructions. The syntax itself was fully functional.
 
 ## Which task was the most difficult? Why?
-
--
-
-
+Task 2 (`sumEvenNumbers`) required the most attention because it contained two separate bugs in a single method. Diagnosing both an initialization error and an off-by-one runtime exception required looking at different types of test failures.
 
 ## How did Git help you track your progress through the debugging process?
-
--
-
-
+It isolated each task into a distinct logical change. Troubleshooting code feels very similar to diagnosing a faulty network link or an aircraft component—isolating variables one at a time is the only reliable way to pinpoint the root cause without breaking something else.
 
 ## Why is it important to make small, frequent commits when debugging code?
-
--
-
-
+Frequent commits act as safety nets. If a new fix introduces a cascading error elsewhere in the program, a recent, small commit allows you to roll back immediately to a stable state rather than untangling a massive block of uncommitted changes.
 
 ## What did you learn about using JUnit tests to guide debugging?
-
--
+JUnit tests eliminate the guesswork by defining the exact expected behavior against boundaries and edge cases. They act as automated blueprints for how the code should perform under stress.
 
 
 
