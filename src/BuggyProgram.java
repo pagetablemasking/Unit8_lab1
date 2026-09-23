@@ -16,28 +16,17 @@ public class BuggyProgram {
 
 
 
-    // Method 2: loop with array
-
+    // Method 2: loop with array (FIXED in Commit 3)
     public static int sumEvenNumbers(int[] values) {
+        int sum = 0;
 
-        int sum = 1;
-
-
-
-        for (int i = 0; i <= values.length; i++) {
-
+        for (int i = 0; i < values.length; i++) {
             if (values[i] % 2 == 0) {
-
                 sum += values[i];
-
             }
-
         }
 
-
-
         return sum;
-
     }
 
 

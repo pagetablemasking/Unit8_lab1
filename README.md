@@ -19,7 +19,7 @@ https://github.com/pagetablemasking/Unit8_lab1
 # Commit 1: Initial Commit
 
 ## What did you include in this commit?
-The starter files for the `unit8_lab1` project, including `BuggyProgram.java`, `README.md`, and the three JUnit test classes
+The starter files for the `unit8_lab1` project, including `src/BuggyProgram.java`, `README.md`, and the three JUnit test classes
 
 ## What was the purpose of this commit?
 To establish the baseline version of the project in version control before making any logical changes or fixes to the buggy methods.
@@ -50,31 +50,17 @@ The failed test assertions immediately highlighted the logical mismatch between 
 
 # Commit 3: Task 2 (sumEvenNumbers)
 
-
-
 ## Which tests in Task2Test were failing before your fix?
-
--
-
-
+All tests verifying the correct sum of even numbers and tests handling standard array boundaries.
 
 ## What was the issue in the code?
-
--
-
-
+There were two issues. First, the accumulator variable `sum` was initialized to 1 instead of 0, throwing off every calculation. Second, the `for` loop condition used `<=` instead of `<` against `values.length`, which causes an `ArrayIndexOutOfBoundsException` when the loop attempts to access an index outside the array's bounds.
 
 ## What change did you make to fix it?
-
--
-
-
+I changed `int sum = 1;` to `int sum = 0;` and updated the loop boundary to `i < values.length`.
 
 ## How did the tests help guide your fix?
-
--
-
-
+The test errors explicitly pointed out the out-of-bounds exception, while the sum verification tests failed by an offset of 1, pointing directly to the initialization error.
 
 ---
 
